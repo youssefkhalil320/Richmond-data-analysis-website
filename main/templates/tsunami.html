@@ -1,0 +1,44 @@
+{% load static %}
+    <link href="{% static 'css/style3.css' %}" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tsunami</title>
+</head>
+<style>
+        html {background: url(static/img/t1.jpg);
+                    background-size: cover;
+}
+
+</style>
+<body>
+
+
+  <form  action="tsunami/res"  class="box">
+    <div class="input-group">
+                <img src="{% static 'img/tsunami.png' %} " id="tsu">
+        <h1>search for a tsunami</h1>
+       
+     <input
+              name = 'query'
+        type="text"
+        class="form-control"
+        style="width: 400px"
+        placeholder="Search With Any Date."
+              value="{{ request.GET.query }}"
+      />        <input type="submit" name="" value="search">
+
+
+
+   
+    </div>
+  </form>
+
+
+
+</body>
+
+</html>

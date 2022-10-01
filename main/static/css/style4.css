@@ -1,0 +1,48 @@
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: rgba(96, 169, 205, 0.542);
+    background-size: cover;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+h1{
+    font-size: 50px;
+    line-height:64px;
+    color: black;
+
+}
+h2{
+    font-size: 30px;
+    line-height:54px;
+    color: rgb(22, 10, 196);
+
+}
+h4{
+    font-size: 20px;
+    color: black;
+
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+
+}
+p{
+    font-size: 16px;
+    color: cornflowerblue;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+#tsu{
+    position:absolute;
+    top:150px;
+    left:800px;
+}

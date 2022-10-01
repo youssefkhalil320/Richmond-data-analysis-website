@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+{% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<style>
+    #hero{
+    background-image:url("static/img/earth.webp") ;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position:top 25% right 0 ;
+    padding:0 80px ;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0px;
+
+}
+
+</style>
+
+<body>
+    <section id="header">
+        <a href=""><img src="{% static 'img/world.png' %}" class="logo"></a>
+    
+    <div>
+        <ul id="navbar">
+            <li><a class="active"  href="{% url 'home' %}">home</a></li>
+            <li><a href="{% url 'earthquake' %}">earthquake</a></li>
+            <li><a href="{% static 'temperature_dash/earthquake_dash.html' %}">Temperature Dashboard</a></li>
+            <li><a href="{% static 'earthquake_dash/earthquake_dash.html' %}">Earth Quake Dashboard</a></li>
+            <li><a href="https://www.geonode-gfdrrlab.org/maps/new?layer=hazard:ts_mih_rp1000&view=True#/">Tsunami map</a></li>
+            <li><a href="https://emishviz.herokuapp.com/">Green House GUMAP</a></li>
+
+        </ul>
+    </div>
+      </section>
+
+  
+      <section id ="hero">
+            <div id="txt">
+                    <h4> Richmond</h4>
+                    <h2>Earthquakes, climate, tsunamis data analysis model </h2>
+                    
+                        
+            </div>
+
+       
+    </section>
+
+
+        
+
+
+
+    
+
+
+ 
+</body>
+</html>

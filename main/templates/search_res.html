@@ -1,0 +1,43 @@
+{% load static %}
+    <link href="{% static 'css/style4.css' %}" rel="stylesheet" type="text/css">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="result">
+    <h2>your result</h2>
+ {% for one in ones %}
+    <h5>{{year}} </h5>
+    <h5>{{one.DAY}}</h5>
+    <h5>{{one.HOUR}}</h5>
+    <h5>{{one.MINUTE}}</h5>
+    <h5>{{one.LATITUDE}}</h5>
+    <h5>{{one.LONGITUDE}}</h5>
+    <h5>{{one.LOCATION_NAME}}</h5>
+    <h5>{{one.REGION}}</h5>
+    <h5>{{one.CAUSE}}</h5>
+    <h5>{{one.EVENT_VALIDITY}}</h5>
+    <h5>{{one.EQ_MAGNITUDE}}</h5>
+    <h5>{{one.EQ_DEPTH}}</h5>
+    <h5>{{one.TS_INTENSITY}}</h5>
+    <h5>{{one.DAMAGE_TOTAL_DESCRIPTION}}</h5>
+    <h5>{{one.HOUSES_TOTAL_DESCRIPTION}}</h5>
+    <h5> {{one.DEATHS_TOTAL_DESCRIPTION}}</h5>
+    <h5>{{one.URL}}</h5>
+    <h5>{{one.COMMENTS}}</h5>
+        <hr>
+    {% endfor %}
+
+    </div>
+            <img src="{% static 'img/tsunami (3).png' %}" id="tsu">
+    
+</body>
+</html>
